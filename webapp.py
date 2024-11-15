@@ -35,7 +35,7 @@ def renderPage3():
     
     return render_template('page3.html')
     
-@app.route('/results')
+@app.route('/results', methods=['GET','POST'])
 def renderPage4():
     return render_template('results.html')
     
