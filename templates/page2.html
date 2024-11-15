@@ -3,5 +3,16 @@
 {% block title %}page2{% endblock %}
 
 {% block content %}
-
+	<form action="/page3"  method="POST">
+		<label for="dan" class="form-label">which country does the danube go through (select one):</label>
+		<select class="form-select" id="dan" name="danube1">
+			<option>India</option>
+			<option>Canada</option>
+			<option>Egypt</option>
+			<option>Bulgaria</option>
+			<option>Brazil</option>
+			<option>China</option>
+		</select>
+		<button type="submit" class="btn btn-primary mt-3">Submit</button>
+	</form>
 {% endblock %}
