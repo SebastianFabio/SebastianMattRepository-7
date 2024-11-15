@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}results{% endblock %}
+
+{% block content %}
+	<h1>Results</h1>
+	<ul>
+	 <li> Your first answer is: {{ session['firstName'] }} </li>
+	 <li> Your second answer is: {{ session['lastName'] }} </li>
+	 <li> Your third answer is: {{ session['favoriteColor'] }} </li>
+	</ul>
+{% endblock %}
