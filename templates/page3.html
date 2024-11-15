@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}page3{% endblock %}
+
+{% block content %}
+	<form action="/results"  method="POST">
+		<label for="tash" class="form-label">which country is the city Tashkent in (select one):</label>
+		<select class="form-select" id="tash" name="tashkent1">
+			<option>Ukraine</option>
+			<option>Iran</option>
+			<option>Uzbekistan</option>
+			<option>Kyrgystan</option>
+			<option>Nepal</option>
+		</select>
+		<button type="submit" class="btn btn-primary mt-3">Submit</button>
+	</form>
+{% endblock %}
