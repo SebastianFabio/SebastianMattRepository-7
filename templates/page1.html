@@ -1,7 +1,16 @@
 {% extends "layout.html" %}
 
-{% block title %}page2{% endblock %}
+{% block title %}page1{% endblock %}
 
 {% block content %}
-
+	<form action="/page2"  method="POST">
+		<label for="ande" class="form-label">which country does the andes go through (select one):</label>
+		<select class="form-select" id="ande" name="andes1">
+			<option>United States</option>
+			<option>Argentina</option>
+			<option>Sweden</option>
+			<option>Switzerland</option>
+		</select>
+		<button type="submit" class="btn btn-primary mt-3">Submit</button>
+	</form>
 {% endblock %}
