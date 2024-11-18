@@ -5,8 +5,10 @@
 {% block content %}
 	<h1>Results</h1>
 	<ul>
-	 <li> Your first answer is: {{ session['firstName'] }} </li>
-	 <li> Your second answer is: {{ session['lastName'] }} </li>
-	 <li> Your third answer is: {{ session['favoriteColor'] }} </li>
+	 <li> Your first answer is: {{ session['answerOne'] }}. The Answer is Argentina</li>
+	 <li> Your second answer is: {{ session['answerTwo'] }}. The Answer is Bulgaria</li>
+	 <li> Your third answer is: {{ session['answerThree'] }} The Answer is Uzbekistan</li>
+	 <li> Your Final Score Is: {{finalScore}} </li>
+	 <li> Your time for the test was {{ time_taken }} seconds</li>
 	</ul>
 {% endblock %}
